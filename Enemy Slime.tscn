@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dhic13gkcefef"]
+
+[ext_resource type="Script" uid="uid://dt0qc4lb7f0kt" path="res://oip.gd" id="1_0rnyo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ajtct"]
+size = Vector2(109, 111)
+
+[node name="Game Engine" type="CharacterBody2D" unique_id=931491572]
+script = ExtResource("1_0rnyo")
+
+[node name="GodotPlayer" type="Sprite2D" parent="." unique_id=2002960977]
+
+[node name="Sprite2D" type="Sprite2D" parent="GodotPlayer" unique_id=838055812]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GodotPlayer" unique_id=2077293518]
+shape = SubResource("RectangleShape2D_ajtct")
+
+[node name="Slime" type="Sprite2D" parent="." unique_id=1481360385]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1024404684]
+
+[node name="Icon1" type="Sprite2D" parent="." unique_id=1915543550]
+position = Vector2(193, 5)
+
+[node name="Sprite2D" type="Area2D" parent="." unique_id=1840949156]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=1440474395]
